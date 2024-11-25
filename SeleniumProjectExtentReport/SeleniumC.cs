@@ -14,19 +14,18 @@ namespace SeleniumProjectExtentReport
     public class SeleniumC
     {
        // private  ExtentReports extent;
-        private static ExtentTest test;
 
         [ClassInitialize]
         public static void ExtentStart(TestContext context)
         {
-            ExtentReports extent = new ExtentReports();
+            //ExtentReports extent = new ExtentReports();
             
-            //var htmlReporter = new ExtentHtmlReporter(@"C:\Users\sabahnoo\source\repos\SeleniumProjectExtentReport\SeleniumProjectExtentReport\ExtentReports\SeleniumC.html");
-            var htmlReporter = new ExtentHtmlReporter("NoorReportsExtent.html");
+            ////var htmlReporter = new ExtentHtmlReporter(@"C:\Users\sabahnoo\source\repos\SeleniumProjectExtentReport\SeleniumProjectExtentReport\ExtentReports\SeleniumC.html");
+            //var htmlReporter = new ExtentHtmlReporter("NoorReportsExtent.html");
 
-            extent.AttachReporter(htmlReporter);
-            extent.CreateTest("testcase1");
-            extent.Flush();
+            //extent.AttachReporter(htmlReporter);
+            //extent.CreateTest("testcase1");
+            //extent.Flush();
 
 
         }
